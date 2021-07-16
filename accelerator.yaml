@@ -32,37 +32,35 @@ accelerator:
       - value-2
     choices:
       - text: Checkbox choice 1
-      - value: value-1
+        value: value-1
       - text: Checkbox choice 2
-      - value: value-2
+        value: value-2
       - text: Checkbox choice 3
-      - value: value-3
+        value: value-3
 
   - name: select
     inputType: select
     display: true
-    defaultValue:
-      - value-2
+    defaultValue: value-2
     choices:
       - text: Select choice 1
-      - value: value-1
+        value: value-1
       - text: Select choice 2
-      - value: value-2
+        value: value-2
       - text: Select choice 3
-      - value: value-3
+        value: value-3
 
   - name: radio
     inputType: radio
     display: true
-    defaultValue:
-      - value-2
+    defaultValue: value-2
     choices:
       - text: Radio choice 1
-      - value: value-1
+        value: value-1
       - text: Radio choice 2
-      - value: value-2
+        value: value-2
       - text: Radio choice 3
-      - value: value-3
+        value: value-3
 
   - name: tag
     inputType: tag

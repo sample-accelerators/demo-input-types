@@ -27,7 +27,7 @@ accelerator:
   - name: checkbox
     inputType: checkbox
     display: true
-    datatype: [string]
+    dataType: [string]
     defaultValue:
       - value-2
     choices:
@@ -65,7 +65,7 @@ accelerator:
   - name: tag
     inputType: tag
     display: true
-    datatype: [string]
+    dataType: [string]
     defaultValue:
       - tag1
       - tag2

@@ -1,0 +1,23 @@
+#@ load("@ytt:data", "data")
+
+options:
+  - name: text
+  - value: #@ data.values.text
+
+  - name: toggle
+  - value: #@ data.values.toggle
+
+  - name: textarea
+  - value: #@ data.values.textarea
+
+  - name: checkbox
+  - value: #@ data.values.checkbox
+
+  - name: select
+  - value: #@ data.values.select
+
+  - name: radio
+  - value: #@ data.values.radio
+
+  - name: tag
+  - value: #@ data.values.tag

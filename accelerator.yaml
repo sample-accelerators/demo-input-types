@@ -1,0 +1,76 @@
+accelerator:
+  displayName: Demo Input Types
+  description: "Accelerator with options for each inputType"
+  iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
+  tags: ["demo", "options"]
+
+  options:
+
+  - name: text
+    inputType: text
+    display: true
+    defaultValue: Text value
+
+  - name: toggle
+    inputType: toggle
+    display: true
+    dataType: boolean
+    defaultValue: true
+
+  - name: textarea
+    inputType: textarea
+    display: true
+    defaultValue: |
+      Text line 1
+      Text line 2
+
+  - name: checkbox
+    inputType: checkbox
+    display: true
+    datatype: [string]
+    defaultValue:
+      - value-2
+    choices:
+      - text: Checkbox choice 1
+      - value: value-1
+      - text: Checkbox choice 2
+      - value: value-2
+      - text: Checkbox choice 3
+      - value: value-3
+
+  - name: select
+    inputType: select
+    display: true
+    defaultValue:
+      - value-2
+    choices:
+      - text: Select choice 1
+      - value: value-1
+      - text: Select choice 2
+      - value: value-2
+      - text: Select choice 3
+      - value: value-3
+
+  - name: radio
+    inputType: radio
+    display: true
+    defaultValue:
+      - value-2
+    choices:
+      - text: Radio choice 1
+      - value: value-1
+      - text: Radio choice 2
+      - value: value-2
+      - text: Radio choice 3
+      - value: value-3
+
+  - name: tag
+    inputType: tag
+    display: true
+    datatype: [string]
+    defaultValue:
+      - tag1
+      - tag2
+
+engine:
+  type: YTT

@@ -7,7 +7,6 @@ accelerator:
   options:
 
   - name: text
-    inputType: text
     display: true
     defaultValue: Text value
 

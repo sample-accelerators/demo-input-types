@@ -16,6 +16,13 @@ accelerator:
     dataType: boolean
     defaultValue: true
 
+  # visibility depends on the value of the toggle option being true
+  - name: dependsOnToggle
+    label: 'depends on toggle'
+    dependsOn:
+      name: toggle
+    defaultValue: text value
+
   - name: textarea
     inputType: textarea
     display: true
@@ -36,6 +43,14 @@ accelerator:
         value: value-2
       - text: Checkbox choice 3
         value: value-3
+
+  # visibility depends on the checkbox option containing a checked value value-2
+  - name: dependsOnCheckbox
+    label: 'depends on checkbox'
+    dependsOn:
+      name: checkbox
+      value: [value-2]
+    defaultValue: text value
 
   - name: select
     inputType: select
@@ -68,6 +83,15 @@ accelerator:
     defaultValue:
       - tag1
       - tag2
+
+  - name: multiText
+    label: multi-text
+    inputType: multi-text
+    display: true
+    dataType: [string]
+    defaultValue:
+      - text value 1
+      - text value 2
 
 engine:
   type: YTT

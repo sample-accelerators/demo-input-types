@@ -7,11 +7,17 @@ options:
   - name: toggle
     value: #@ data.values.toggle
 
+  - name: "dependsOn: toggle"
+    value: #@ data.values.dependsOnToggle
+
   - name: textarea
     value: #@ data.values.textarea
 
   - name: checkbox
     value: #@ data.values.checkbox
+
+  - name: "dependsOn: checkbox"
+    value: #@ data.values.dependsOnCheckbox
 
   - name: select
     value: #@ data.values.select
@@ -21,3 +27,6 @@ options:
 
   - name: tag
     value: #@ data.values.tag
+
+  - name: multi-text
+    value: #@ data.values.multiText

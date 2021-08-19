@@ -16,9 +16,9 @@ accelerator:
     dataType: boolean
     defaultValue: true
 
-  # visibility depends on the value of the toggle option being true
   - name: dependsOnToggle
     label: 'depends on toggle'
+    description: Visibility depends on the value of the toggle option being true.
     dependsOn:
       name: toggle
     defaultValue: text value
@@ -44,9 +44,9 @@ accelerator:
       - text: Checkbox choice 3
         value: value-3
 
-  # visibility depends on the checkbox option containing a checked value value-2
   - name: dependsOnCheckbox
     label: 'depends on checkbox'
+    description: Visibility depends on the checkbox option containing a checked value value-2.
     dependsOn:
       name: checkbox
       value: [value-2]

@@ -11,7 +11,7 @@ accelerator:
     defaultValue: Text value
 
   - name: toggle
-    inputType: toggle
+    inputType: checkbox
     display: true
     dataType: boolean
     defaultValue: true
@@ -60,14 +60,6 @@ accelerator:
         value: value-2
       - text: Radio choice 3
         value: value-3
-
-  - name: tag
-    inputType: tag
-    display: true
-    dataType: [string]
-    defaultValue:
-      - tag1
-      - tag2
 
 engine:
   type: YTT

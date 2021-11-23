@@ -18,6 +18,3 @@ options:
 
   - name: radio
     value: #@ data.values.radio
-
-  - name: tag
-    value: #@ data.values.tag

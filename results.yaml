@@ -18,3 +18,9 @@ options:
 
   - name: radio
     value: #@ data.values.radio
+
+  - name: Regex Validation
+    value: #@ data.values.regexValidation
+
+  - name: Required
+    value: #@ data.values.required

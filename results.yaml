@@ -16,7 +16,7 @@ options:
   - name: select
     value: #@ data.values.select
 
-  - name: radio  
+  - name: radio
     value: #@ data.values.radio
 
   - name: Regex Validation

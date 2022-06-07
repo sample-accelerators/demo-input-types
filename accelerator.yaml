@@ -11,13 +11,13 @@ accelerator:
     defaultValue: Text value
 
   - name: toggle
-    inputType: checkbox
+    inputType: checkbox    
     display: true
     dataType: boolean
     defaultValue: true
 
   - name: textarea
-    inputType: textarea
+    inputType: textarea    
     display: true
     defaultValue: |
       Text line 1
@@ -26,7 +26,7 @@ accelerator:
   - name: checkbox
     inputType: checkbox
     display: true
-    dataType: [string]
+    dataType: [string]    
     defaultValue:
       - value-2
     choices:
@@ -39,7 +39,7 @@ accelerator:
 
   - name: select
     inputType: select
-    display: true
+    display: true    
     defaultValue: value-2
     choices:
       - text: Select choice 1
@@ -51,7 +51,7 @@ accelerator:
 
   - name: radio
     inputType: radio
-    display: true
+    display: true    
     defaultValue: value-2
     choices:
       - text: Radio choice 1
@@ -60,6 +60,19 @@ accelerator:
         value: value-2
       - text: Radio choice 3
         value: value-3
+
+  - name: regexValidation
+    label: Regex Validation
+    inputType: text
+    display: true    
+    validationRegex: "^[a-zA-Z]{1,3}$"
+  
+  - name: required
+    label: Required Field
+    inputType: text
+    display: true    
+    required: true
+
 
 engine:
   type: YTT

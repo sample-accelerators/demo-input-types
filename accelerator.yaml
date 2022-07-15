@@ -73,6 +73,12 @@ accelerator:
     display: true
     required: true
 
+  - name: hiddeb
+    label: Hidden Field
+    inputType: text
+    display: false
+    required: false
+
 
 engine:
   type: YTT

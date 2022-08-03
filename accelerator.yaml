@@ -7,6 +7,7 @@ accelerator:
   options:
 
   - name: text
+    description: 'Enter some text'
     display: true
     defaultValue: Text value
 
@@ -36,6 +37,28 @@ accelerator:
         value: value-2
       - text: Checkbox choice 3
         value: value-3
+
+  - name: checkbox2
+    description: 'This option is dependend on - select "choice 3" only to see that option below'
+    inputType: checkbox
+    display: true
+    dataType: [string]
+    defaultValue:
+      - value-1
+    choices:
+      - text: Checkbox2 choice 1
+        value: value-1
+      - text: Checkbox2 choice 2
+        value: value-2
+      - text: Checkbox2 choice 3
+        value: value-3
+
+  - name: dependsOnCheckbox2
+    description: Visibility depends on the checkbox2 option containing a checked value value-3 (Checkbox2 choice 3).
+    dependsOn:
+      name: checkbox2
+      value: [value-3]
+    defaultValue: text value
 
   - name: select
     inputType: select
@@ -72,13 +95,6 @@ accelerator:
     inputType: text
     display: true
     required: true
-
-  - name: hiddeb
-    label: Hidden Field
-    inputType: text
-    display: false
-    required: false
-
 
 engine:
   type: YTT
